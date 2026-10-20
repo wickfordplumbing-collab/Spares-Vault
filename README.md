@@ -12,6 +12,8 @@ https://wickfordplumbing-collab.github.io/Spares-Vault/
 
 That page is a static Expo web build published by GitHub Pages (`.github/workflows/pages.yml` on every push to `main`). The site lives under `/Spares-Vault`. Help, shop search, the basket, test checkout, and the supplier email all run in the browser against a bundled copy of the sample catalogue and the knowledge base.
 
+The workflow file is already on `main`. The first publish still needs an admin to turn Pages on: open the repository, go to **Settings → Pages → Build and deployment**, and set **Source** to **GitHub Actions**. Then open **Actions → Pages**, open the latest run, and choose **Re-run failed jobs**. Until that source is selected, the URL above is GitHub's 404 page.
+
 - Pay with card `4242 4242 4242 4242`, any expiry, any CVC.
 - Staff orders (Orders tab) uses token `change-me`.
 - The DHS email is composed and shown on the order. Nothing is sent. Orders stay in that browser.
