@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
-import { api } from "@/src/api";
+import { api, isDemoMode } from "@/src/api";
 import { colors, gbp, serif } from "@/src/theme";
 import type { Order } from "@/src/types";
 import { Button, ErrorText, Field, Screen } from "@/src/ui";
@@ -42,7 +42,11 @@ export default function AdminScreen() {
     <Screen back>
       <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
         <Text style={styles.heading}>Staff orders</Text>
-        <Text style={styles.lead}>The token is the API ADMIN_TOKEN. It is not stored in the app binary.</Text>
+        <Text style={styles.lead}>
+          {isDemoMode()
+            ? "Browser demo. The staff token is change-me. Orders and the composed supplier email stay in this browser. Nothing is sent."
+            : "The token is the API ADMIN_TOKEN. It is not stored in the app binary."}
+        </Text>
         <Field label="Staff token" value={token} onChangeText={setToken} secureTextEntry autoCapitalize="none" />
         <Button label="Load orders" onPress={load} />
         {error ? <ErrorText message={error} /> : null}

@@ -4,6 +4,25 @@ Mobile shop and fault assistant for Wickford Plumbing Supplies, a UK trade plumb
 
 The app is Expo / React Native (TypeScript), so the same project builds for the Apple App Store and Google Play. Secrets stay on the API. The repository can be public: only `.env.example` is committed.
 
+## Try it in the browser
+
+No account, API key, or server is required. Open the hosted demo:
+
+https://wickfordplumbing-collab.github.io/Spares-Vault/
+
+That page is a static Expo web build published by GitHub Pages (`.github/workflows/pages.yml` on every push to `main`). The site lives under `/Spares-Vault`. Help, shop search, the basket, test checkout, and the supplier email all run in the browser against a bundled copy of the sample catalogue and the knowledge base.
+
+- Pay with card `4242 4242 4242 4242`, any expiry, any CVC.
+- Staff orders (Orders tab) uses token `change-me`.
+- The DHS email is composed and shown on the order. Nothing is sent. Orders stay in that browser.
+
+A local build of the same demo:
+
+```bash
+cd apps/mobile
+EXPO_PUBLIC_DEMO=1 EXPO_PUBLIC_BASE_PATH=/Spares-Vault npm run export:pages
+```
+
 ```
 apps/mobile     Expo app (Help, Shop, basket, checkout, orders, staff list)
 apps/api        Node / TypeScript API
@@ -68,7 +87,9 @@ See `.env.example`. Nothing secret has a default that should be used in producti
 | `WICKFORD_ORDERS_EMAIL` | Copy of every order |
 | `ORDER_FROM_EMAIL`, `ORDER_FROM_NAME` | From header when SMTP is set |
 | `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `SMTP_SECURE` | Optional. If `SMTP_HOST` is empty the email is still generated and saved |
-| `EXPO_PUBLIC_API_URL` | API URL baked into the app at bundle time. Not a secret |
+| `EXPO_PUBLIC_API_URL` | API URL baked into the app at bundle time. Not a secret. Ignored when demo mode is on |
+| `EXPO_PUBLIC_DEMO` | Set to `1` to use the in-browser mock (no Node server). Also turns on automatically when the site hostname ends in `github.io` |
+| `EXPO_PUBLIC_BASE_PATH` | Subpath for a static host, for example `/Spares-Vault` on GitHub Pages. Leave unset for local web at `/` |
 
 The knowledge base lists DHS on 0330 123 3707 and does not publish an orders email. Replace `SUPPLIER_ORDER_EMAIL` with the trade-desk address once the account is confirmed. Until SMTP is set, open `data/outbox/WPS-*-supplier.txt` to see the exact message.
 

@@ -9,6 +9,7 @@
     "import-catalogue": "npm run import-catalogue --prefix apps/api --",
     "mobile": "npm run start --prefix apps/mobile",
     "mobile:web": "npm run web --prefix apps/mobile",
-    "typecheck": "npm run typecheck --prefix apps/api && npm run typecheck --prefix apps/mobile"
+    "typecheck": "npm run typecheck --prefix apps/api && npm run typecheck --prefix apps/mobile",
+    "demo:test": "apps/api/node_modules/.bin/tsx apps/mobile/scripts/demo-selftest.ts"
   }
 }

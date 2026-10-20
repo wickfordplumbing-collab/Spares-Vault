@@ -2,7 +2,7 @@ import { router } from "expo-router";
 import { useState } from "react";
 import { ScrollView, StyleSheet, Text } from "react-native";
 import * as WebBrowser from "expo-web-browser";
-import { api } from "@/src/api";
+import { api, isDemoMode } from "@/src/api";
 import { useStore } from "@/src/store";
 import { colors, gbp, serif } from "@/src/theme";
 import { Button, ErrorText, Field, GasSafe, Screen } from "@/src/ui";
@@ -55,7 +55,11 @@ export default function CheckoutScreen() {
     <Screen back>
       <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
         <Text style={styles.heading}>Delivery</Text>
-        <Text style={styles.lead}>The supplier drop-ships to this address. A copy of the order email goes to Wickford.</Text>
+        <Text style={styles.lead}>
+          {isDemoMode()
+            ? "The supplier would drop-ship to this address. This demo only composes the DHS email and shows it on the order. Nothing is sent."
+            : "The supplier drop-ships to this address. A copy of the order email goes to Wickford."}
+        </Text>
         <GasSafe compact />
         <Text style={styles.total}>{gbp(subtotalPence)} ex VAT · placeholder if the sample catalogue is loaded</Text>
         <Field label="Name" value={name} onChangeText={setName} autoComplete="name" />

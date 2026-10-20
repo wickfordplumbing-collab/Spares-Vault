@@ -1,7 +1,7 @@
 import { router, useLocalSearchParams } from "expo-router";
 import { useState } from "react";
 import { ScrollView, StyleSheet, Text } from "react-native";
-import { api } from "@/src/api";
+import { api, isDemoMode } from "@/src/api";
 import { useStore } from "@/src/store";
 import { colors, serif } from "@/src/theme";
 import type { Order } from "@/src/types";
@@ -53,7 +53,9 @@ export default function PayScreen() {
         <Text style={styles.kicker}>Stripe test mode · simulated</Text>
         <Text style={styles.heading}>Pay {orderId}</Text>
         <Text style={styles.lead}>
-          No Stripe secret key is configured, so this checkout does not contact Stripe. Use test card 4242 4242 4242 4242, any future expiry, and any CVC. The card number is checked and then discarded.
+          {isDemoMode()
+            ? "This demo never contacts Stripe or a server. Use test card 4242 4242 4242 4242, any expiry, and any CVC. The number is checked and discarded. The supplier email is only shown on the order."
+            : "No Stripe secret key is configured, so this checkout does not contact Stripe. Use test card 4242 4242 4242 4242, any future expiry, and any CVC. The card number is checked and then discarded."}
         </Text>
         <GasSafe compact />
         <Field label="Card number" value={card} onChangeText={setCard} keyboardType="number-pad" placeholder="4242 4242 4242 4242" />

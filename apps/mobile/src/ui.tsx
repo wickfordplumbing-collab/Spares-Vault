@@ -12,7 +12,7 @@ import {
   type ViewStyle,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { api } from "./api";
+import { api, isDemoMode } from "./api";
 import { colors, gbp, serif } from "./theme";
 import type { Health, Product } from "./types";
 import { useStore } from "./store";
@@ -42,6 +42,13 @@ export function Screen({
         </View>
         <Text style={styles.town}>Essex</Text>
       </View>
+      {isDemoMode() ? (
+        <View style={styles.demo}>
+          <Text style={styles.demoText}>
+            Browser demo. No account and no server. Orders stay on this device. Staff token: change-me
+          </Text>
+        </View>
+      ) : null}
       <View style={styles.body}>{children}</View>
       {footer}
     </SafeAreaView>
@@ -174,6 +181,8 @@ const styles = StyleSheet.create({
   kicker: { color: colors.brass, letterSpacing: 2.4, fontSize: 11, fontWeight: "700" },
   brandName: { ...serif, color: colors.cream, fontSize: 22, marginTop: 1 },
   town: { color: "#D9C7A2", fontSize: 12, paddingBottom: 4 },
+  demo: { backgroundColor: colors.brass, paddingHorizontal: 16, paddingVertical: 8 },
+  demoText: { color: "#fff", fontSize: 13, lineHeight: 18, fontWeight: "600" },
   body: { flex: 1 },
   gas: {
     backgroundColor: colors.dangerBg,
