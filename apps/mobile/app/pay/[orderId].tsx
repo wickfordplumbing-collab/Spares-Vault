@@ -18,10 +18,17 @@ export default function PayScreen() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
 
+  function onExpiry(value: string) {
+    const digits = value.replace(/\D/g, "").slice(0, 4);
+    setExpiry(digits.length <= 2 ? digits : `${digits.slice(0, 2)}/${digits.slice(2)}`);
+  }
+
   async function pay() {
     const digits = card.replace(/\D/g, "");
-    if (!/^\d{2}\/\d{2}$/.test(expiry) || cvc.replace(/\D/g, "").length < 3) {
-      setError("Enter an expiry as MM/YY and a 3-digit CVC. They stay on this device.");
+    const expDigits = expiry.replace(/\D/g, "");
+    const cvcDigits = cvc.replace(/\D/g, "");
+    if (expDigits.length !== 4 || cvcDigits.length < 3) {
+      setError("Enter an expiry (MM/YY) and a 3-digit CVC. They stay on this device.");
       return;
     }
     setBusy(true);
@@ -50,7 +57,7 @@ export default function PayScreen() {
         </Text>
         <GasSafe compact />
         <Field label="Card number" value={card} onChangeText={setCard} keyboardType="number-pad" placeholder="4242 4242 4242 4242" />
-        <Field label="Expiry" value={expiry} onChangeText={setExpiry} placeholder="12/28" />
+        <Field label="Expiry" value={expiry} onChangeText={onExpiry} placeholder="12/28" keyboardType="number-pad" />
         <Field label="CVC" value={cvc} onChangeText={setCvc} keyboardType="number-pad" placeholder="123" />
         {error ? <ErrorText message={error} /> : null}
         <Button label={busy ? "Taking payment…" : "Pay with test card"} onPress={pay} disabled={busy} />
