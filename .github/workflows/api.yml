@@ -1,0 +1,22 @@
+name: API
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: apps/api/package-lock.json
+      - name: Install API dependencies
+        working-directory: apps/api
+        run: npm ci
+      - name: Typecheck and test
+        working-directory: apps/api
+        run: npm run typecheck && npm test

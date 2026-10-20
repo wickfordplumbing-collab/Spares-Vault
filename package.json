@@ -1,0 +1,14 @@
+{
+  "name": "wickford-plumbing-supplies",
+  "private": true,
+  "description": "Wickford Plumbing Supplies — boiler spares shop and fault assistant",
+  "scripts": {
+    "api": "npm run start --prefix apps/api",
+    "api:dev": "npm run dev --prefix apps/api",
+    "test": "npm test --prefix apps/api",
+    "import-catalogue": "npm run import-catalogue --prefix apps/api --",
+    "mobile": "npm run start --prefix apps/mobile",
+    "mobile:web": "npm run web --prefix apps/mobile",
+    "typecheck": "npm run typecheck --prefix apps/api && npm run typecheck --prefix apps/mobile"
+  }
+}

@@ -1,0 +1,65 @@
+part_number,description,brand,price,stock,fits,price_note
+175591,Ignition electrode,Ideal,18.40,6,Ideal Logic Combi 30 (GC 47-348-57),PLACEHOLDER
+175592,Detection electrode,Ideal,16.90,5,Ideal Logic Combi 30 (GC 47-348-57); ignition and detection are separate Ideal numbers,PLACEHOLDER
+175593,Ignitor unit,Ideal,42.00,2,Ideal Logic Combi 30 (GC 47-348-57),PLACEHOLDER
+179032,24 volt gas valve kit,Ideal,96.00,2,Ideal Logic Combi 30 (GC 47-348-57); 24V — do not substitute a 230V valve,PLACEHOLDER
+175569,Fan kit,Ideal,78.50,3,Ideal Logic Combi 30 (GC 47-348-57),PLACEHOLDER
+175571,Burner kit,Ideal,54.00,2,Ideal Logic Combi 30 (GC 47-348-57),PLACEHOLDER
+175572,Burner gasket,Ideal,8.75,12,Ideal Logic Combi 30 (GC 47-348-57); order the seal with the burner,PLACEHOLDER
+177540,Expansion vessel kit,Ideal,68.00,2,Ideal Logic Combi 30 (GC 47-348-57),PLACEHOLDER
+176610,Pressure relief valve kit,Ideal,24.50,4,Ideal Logic Combi 30 (GC 47-348-57); variant check against 175413 — output/generation,PLACEHOLDER
+175413,Pressure relief valve kit (alternate listing),Ideal,23.80,3,Ideal Logic Combi 30 (GC 47-348-57); two PRV kits listed — confirm which variant,PLACEHOLDER
+0020059717,Water pressure sensor (low water / F.75 sensor),Vaillant,41.20,4,Vaillant ecoTEC Plus 831 2005-2010 (GC 47-044-32); ecoTEC Plus/Pro family — confirm GC,PLACEHOLDER
+0020132764,Printed circuit board,Vaillant,186.00,1,Vaillant ecoTEC Plus 831 2005-2010 (GC 47-044-32); control box splits around 08/09-2007 — serial/date before ordering a PCB,PLACEHOLDER
+181051,Expansion vessel,Vaillant,72.00,2,Vaillant ecoTEC Plus 831 2005-2010 (GC 47-044-32),PLACEHOLDER
+178985,3 bar pressure relief valve (brass safety valve; discharge pipe often runs outside — not the blue filling-loop handles),Vaillant,21.60,5,Vaillant ecoTEC Plus 831 2005-2010 (GC 47-044-32); NUMBER COLLISION: 178985 is also an Ideal front door panel — brand and diagram position required,PLACEHOLDER
+193592,NTC temperature sensor,Vaillant,14.80,8,Vaillant ecoTEC Plus 831 2005-2010 (GC 47-044-32),PLACEHOLDER
+090709,Ignition and monitoring electrode,Vaillant,19.40,4,Vaillant ecoTEC Plus 831 2005-2010 (GC 47-044-32),PLACEHOLDER
+160928,Circulator pump — Grundfos-pattern number listed for Vaillant (confirm head versus complete pump),Vaillant,88.00,2,Vaillant models on the universal pump-head cross-list (160928). Not a proven ecoTEC plus 831 listing — confirm on the appliance diagram. Compatible head only where a universal head is offered,PLACEHOLDER
+5121447,Fan,Baxi,81.00,2,Baxi DuoTec HE 28 (GC 47-075-24),PLACEHOLDER
+720222801,Ignition electrode,Baxi,17.50,4,Baxi DuoTec HE 28 (GC 47-075-24),PLACEHOLDER
+720222901,Ionisation electrode,Baxi,17.50,4,Baxi DuoTec HE 28 (GC 47-075-24),PLACEHOLDER
+7223558,DHW plate heat exchanger 20 plate,Baxi,74.00,2,Baxi DuoTec HE 28 (GC 47-075-24); plate count and kW must match,PLACEHOLDER
+7216534,Diverter valve motor including clip (black) — 220-240V Elbi/Bitron type,Baxi,46.00,3,Baxi DuoTec HE 28 (GC 47-075-24); motor only — not the cartridge or the valve body; 24V motors such as Ideal 181018 are a different part,PLACEHOLDER
+7224764,3 way valve without bypass (diverter valve body),Baxi,62.00,2,Baxi DuoTec HE 28 (GC 47-075-24); body not motor not cartridge,PLACEHOLDER
+7656807,3 way valve cartridge,Potterton,28.40,3,Baxi DuoTec HE 28 family (GC 47-075-24); Baxi Heating same-company cartridge — not a cross-brand swap,PLACEHOLDER
+5114691,Expansion vessel 8 litre,Baxi,58.00,2,Baxi DuoTec HE 28 (GC 47-075-24); 8L — do not swap for a different litre rating on shape alone,PLACEHOLDER
+248056,Safety valve 3 bar,Baxi,19.90,6,Baxi DuoTec HE 28 (GC 47-075-24); 3 bar — not the 3.5 bar Betacom valve,PLACEHOLDER
+248043,Automatic air vent,Baxi,12.40,7,Baxi DuoTec HE 28 (GC 47-075-24); check thread and head versus complete vent,PLACEHOLDER
+5114755,Combustion chamber gasket,Baxi,11.20,9,Baxi DuoTec HE 28 (GC 47-075-24); order the seal with the combustion part,PLACEHOLDER
+248042,Pump head Grundfos-pattern (Baxi number on the universal compatible-head list),Baxi,64.00,3,Baxi models listed against 248042. Compatible head only — connector speed and warranty differ from a genuine complete pump,PLACEHOLDER
+720878202,Printed circuit board,Baxi,174.00,1,Baxi DuoTec 2 Combi GA 24 (GC 47-075-54),PLACEHOLDER
+720767301,Spark electrode,Baxi,15.60,4,Baxi DuoTec 2 Combi GA 24 (GC 47-075-54),PLACEHOLDER
+720767101,Flame sensing electrode,Baxi,15.60,4,Baxi DuoTec 2 Combi GA 24 (GC 47-075-54),PLACEHOLDER
+720789201,NTC sensor,Baxi,13.40,6,Baxi DuoTec 2 Combi GA 24 (GC 47-075-54),PLACEHOLDER
+720787801,Safety valve 3 bar,Baxi,20.10,4,Baxi DuoTec 2 Combi GA 24 (GC 47-075-54),PLACEHOLDER
+720777601,Automatic air vent,Baxi,13.20,4,Baxi DuoTec 2 Combi GA 24 (GC 47-075-54); AAV chain has a conflicting Baxi leg — confirm thread,PLACEHOLDER
+720753901,Expansion vessel 8 litre,Remeha,61.00,1,Baxi DuoTec 2 Combi GA 24 (GC 47-075-54); Remeha number on a Baxi Heating page — same group confirm before ordering,PLACEHOLDER
+8716118443,Fan assembly,Worcester Bosch,92.00,2,Worcester Greenstar 28i Junior FSN NG (GC 47-311-87); keep the full Bosch-length number,PLACEHOLDER
+87161163810,Electrodes,Worcester Bosch,28.00,3,Worcester Greenstar 28i Junior FSN NG (GC 47-311-87),PLACEHOLDER
+8716122562,Flow sensor,Worcester Bosch,36.50,3,Worcester Greenstar 28i Junior FSN NG (GC 47-311-87); not the flow turbine adaptor,PLACEHOLDER
+8716122264,Flow turbine adaptor,Worcester Bosch,22.00,3,Worcester Greenstar 28i Junior FSN NG (GC 47-311-87); not the flow sensor,PLACEHOLDER
+87145000810,DHW temperature sensor,Worcester Bosch,16.20,4,Worcester Greenstar 28i Junior FSN NG (GC 47-311-87),PLACEHOLDER
+87161064310,Pressure relief valve,Worcester Bosch,24.80,3,Worcester Greenstar 28i Junior FSN NG (GC 47-311-87),PLACEHOLDER
+87161164280,Pressure gauge,Worcester Bosch,18.70,3,Worcester Greenstar 28i Junior FSN NG (GC 47-311-87),PLACEHOLDER
+87161105340,Burner gasket,Worcester Bosch,9.40,8,Worcester Greenstar 28i Junior FSN NG (GC 47-311-87),PLACEHOLDER
+87186510420,Water pressure sensor,Worcester Bosch,38.50,2,Worcester Greenstar 8000 Life/Style ranges on the cross-list. Cross-brand alternative to Vaillant 0020059717 — confirm clips O-ring and GC. Placeholder price only,PLACEHOLDER
+0020118640,3-way valve motor (ELBI) — 220-240V,Glow-worm,44.00,2,Glow-worm Betacom 30C (GC 47-019-09); supersedes 0020061621; motor only; not a 24V motor,PLACEHOLDER
+0020061608,Flow sensor and cable,Glow-worm,33.00,2,Glow-worm Betacom 30C (GC 47-019-09),PLACEHOLDER
+0020118638,DHW sensor,Glow-worm,15.10,3,Glow-worm Betacom 30C (GC 47-019-09),PLACEHOLDER
+0020061573,Control electrode,Glow-worm,18.20,3,Glow-worm Betacom 30C (GC 47-019-09),PLACEHOLDER
+0020061607,Low water pressure switch,Glow-worm,21.40,2,Glow-worm Betacom 30C (GC 47-019-09),PLACEHOLDER
+0020061610,Safety valve 3.5 bar,Glow-worm,23.60,3,Glow-worm Betacom 30C (GC 47-019-09); 3.5 bar — do not fit a 3 bar PRV in its place,PLACEHOLDER
+0020061630,Hydrobloc return group,Glow-worm,124.00,1,Glow-worm Betacom 30C (GC 47-019-09); whole group — do not order this for a motor-only fault,PLACEHOLDER
+2000802600,Filling loop — the blue valve under the boiler (blue-handled valves on the pipework underneath),Glow-worm,26.80,5,Glow-worm CXi 38 (GC 47-047-27); NOW USE successor to disconnector 801673. This is the filling loop customers mean by the blue valve under the boiler not the brass pressure-relief valve,PLACEHOLDER
+200117,NTC temperature sensor (heat exchanger),Intergas,14.20,6,Intergas Combi Compact HRE 28/24 (GC 47-291-02); manual short spares list 200117; Intergas sensors are 12 kilohm not 10,PLACEHOLDER
+074397,Fan assembly,Intergas,84.00,2,Intergas Combi Compact HRE 28/24 (GC 47-291-02); matches manual 074397,PLACEHOLDER
+801537,Ignition module Siemens Smart,Intergas,67.00,1,Intergas Combi Compact HRE 28/24 (GC 47-291-02); manual lists 801477 — numbers disagree confirm with Intergas or DHS before ordering,PLACEHOLDER
+801467,Gas valve Siemens,Intergas,110.00,1,Intergas Combi Compact HRE 28/24 (GC 47-291-02); from the manual short spares list — Gas Safe work,PLACEHOLDER
+844417,Pressure relief valve,Intergas,22.40,3,Intergas Combi Compact HRE 28/24 (GC 47-291-02),PLACEHOLDER
+844267,Flow switch Sika VKX,Intergas,31.00,2,Intergas Combi Compact HRE 28/24 (GC 47-291-02); HRE does not use a conventional combi diverter — do not sell a diverter for this variant,PLACEHOLDER
+074607,Ignition cable and cap,Intergas,12.80,4,Intergas Combi Compact HRE 28/24 (GC 47-291-02); manual lists ignition cable 221357 — confirm variant,PLACEHOLDER
+844187,Condensate trap,Intergas,19.50,3,Intergas Combi Compact HRE 28/24 (GC 47-291-02),PLACEHOLDER
+074277,Boiler controller,Intergas,168.00,1,Intergas Combi Compact HRE family; manual short list — confirm the exact HRE output,PLACEHOLDER
+5111603,Suprima PCB kit 30-100,Potterton,142.00,1,Potterton Suprima 50 (GC 41-607-77); legacy upgrade kit,PLACEHOLDER
+402550,Gas valve Honeywell Suprima,Potterton,98.00,1,Potterton Suprima 50 (GC 41-607-77),PLACEHOLDER
